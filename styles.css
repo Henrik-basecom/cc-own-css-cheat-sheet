@@ -1,0 +1,89 @@
+:root {
+  --MAIN-COLOR: #f08700;
+  --SECOND-COLOR: #0069f0;
+  --BLACK-COLOR: #071013;
+  --WHITE-COLOR: #fffffc;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: var(--WHITE-COLOR);
+  font-size: 16px;
+}
+
+body {
+  height: 100vh;
+  padding: 15px;
+  background-color: var(--MAIN-COLOR);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section div {
+  margin-top: 30px;
+}
+
+section div table {
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h3,
+caption {
+  text-align: center;
+}
+
+table {
+  box-shadow: 2px 2px 5px 3px #a85f00;
+  border: 1px solid var(--MAIN-COLOR);
+  border-spacing: 0;
+  border-radius: 10px;
+  width: 100%;
+  background-color: var(--SECOND-COLOR);
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: left;
+  border: 1px solid var(--MAIN-COLOR);
+}
+
+th {
+  font-size: 1.05rem;
+}
+
+caption {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+thead tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+
+thead tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
